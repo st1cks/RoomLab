@@ -8,8 +8,7 @@ public class Person {
 	String familyName;
 	int xLoc, yLoc;
 	private int Health, maxHealth;
-	private String restoreHealth;
-	private String gainMaxHealth;
+	private int Strength;
 
 	public int getxLoc() {
 		return xLoc;
@@ -27,7 +26,27 @@ public class Person {
 		this.yLoc = yLoc;
 	}
 
-	public Person (String firstName, String familyName, int xLoc, int yLoc, int Health, int maxHealth, String restoreHealth, String gainMaxHealth)
+	public String restoreHealth(int Amt){
+		if ((Health + Amt) > maxHealth){
+		Health = maxHealth;
+		}
+		else{
+			Health = Health + Amt;
+		}
+		return ""+Health+"/"+maxHealth+"";
+	}
+	public String gainMaxHealth(int Amt){
+		maxHealth = Amt + maxHealth;
+		return ""+Health+"/"+maxHealth+"";
+	}
+
+	public String strengthIncrease(int Amt){
+		Strength = Strength + Amt;
+
+		return "Strength ="+Strength+"";
+	}
+
+	public Person (String firstName, String familyName, int xLoc, int yLoc, int Health, int maxHealth, int Strength)
 	{
 		this.firstName = firstName;
 		this.familyName = familyName;
@@ -35,11 +54,8 @@ public class Person {
 		this.yLoc = yLoc;
 		this.Health = Health;
 		this.maxHealth = maxHealth;
-		this.restoreHealth = restoreHealth;
-		this.gainMaxHealth = gainMaxHealth;
+		this.Strength = Strength;
 	}
-
-	
 
 
 }
