@@ -11,8 +11,3 @@ public class Apple implements Consumable{
         return "Healthy Apple";
     }
 }
-
-// this?^okay u
-There's no method to spawn items yet
-My overarching class? huh
-There's a runner to run the game

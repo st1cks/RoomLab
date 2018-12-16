@@ -2,9 +2,9 @@ package Enemies;
 
 public class Enemy1 implements Enemy {
         private int HP;
-        private int MaxHP;
-        private int Strength;
-        private int
+        private final int MAX_HP= 15;
+        private final int Strength = 3;
+
     public String getName(){
         return "Chad the Business Man";
     }
@@ -33,8 +33,7 @@ public class Enemy1 implements Enemy {
     }
 
 public int goldDrop(){
-        Person.Gold +
-
+        return 0;
 }
-Ah hold on
+
 }
