@@ -9,6 +9,7 @@ public class Person {
 	int xLoc, yLoc;
 	private int Health, maxHealth;
 	private int Strength;
+	public int Gold;
 
 	public int getxLoc() {
 		return xLoc;
@@ -49,6 +50,11 @@ public class Person {
 
 		return "Strength ="+Strength+"";
 	}
+
+	public String Consume(Consumable E){
+		E.eat();
+	}
+
 
 	public Person (String firstName, String familyName, int xLoc, int yLoc, int Health, int maxHealth, int Strength)
 	{

@@ -1,7 +1,10 @@
 package Enemies;
 
 public class Enemy1 implements Enemy {
-
+        private int HP;
+        private int MaxHP;
+        private int Strength;
+        private int
     public String getName(){
         return "Chad the Business Man";
     }
@@ -29,5 +32,9 @@ public class Enemy1 implements Enemy {
         System.out.println ("    (____))    ");
     }
 
+public int goldDrop(){
+        Person.Gold +
 
+}
+Ah hold on
 }

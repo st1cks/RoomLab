@@ -14,7 +14,7 @@ public class Runner {
 	
 	public static void main(String[] args)
 	{
-		Room[][] building = new Room[5][5];
+		Room[][] building = new Room[10][10];
 		
 		//Fill the building with normal rooms
 		for (int x = 0; x<building.length; x++)
@@ -35,7 +35,7 @@ public class Runner {
 		building[a][b] = new BattleRoom(x, y);
 
 		 //Setup player 1 and the input scanner
-		Person player1 = new Person("FirstName", "FamilyName", 0,0);
+		Person player1 = new Person("Timothy", "FamilyName", 0,0);
 		building[0][0].enterRoom(player1);
 		Scanner in = new Scanner(System.in);
 		while(gameOn)

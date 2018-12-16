@@ -12,7 +12,10 @@ import People.Person;
         x.setxLoc(this.xLoc);
         x.setyLoc(this.yLoc);
 
-        System.out.println("You have entered the Battle Room. An orc beats you on the head with a club, and you die.");
-            Runner.gameOff();
+        System.out.println("You have entered the Battle Room.");
+    }
+
+    public void spawnEnemy(){
+
     }
 }
