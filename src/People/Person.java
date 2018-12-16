@@ -40,6 +40,10 @@ public class Person {
 		return ""+Health+"/"+maxHealth+"";
 	}
 
+	public static void consumeApple(Person x){
+		Apple.eat(Person x);
+	}
+
 	public String strengthIncrease(int Amt){
 		Strength = Strength + Amt;
 
