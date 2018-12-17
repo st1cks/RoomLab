@@ -1,10 +1,11 @@
 package People;
 
-public class Inventory {
+public class Inventory extends Person{
     private int ItemCount;
     private final int MAX_ITEMS = 5;
     private String[] inventory;
 
+    Person person1 = new Person();
 
     public Inventory(){
         this.inventory = new String[MAX_ITEMS];

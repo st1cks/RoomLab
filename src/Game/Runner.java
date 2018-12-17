@@ -4,7 +4,7 @@ import People.Person;
 import Rooms.BattleRoom;
 import Rooms.Room;
 import Rooms.WinningRoom;
-
+import People.Inventory;
 import java.util.Scanner;
 
 public class Runner {
@@ -29,7 +29,7 @@ public class Runner {
 		int x = (int)(Math.random()*building.length);
 		int y = (int)(Math.random()*building.length);
 		building[x][y] = new WinningRoom(x, y);
-
+		Inventory playerinventory = new Inventory();
 		int a = (int)(Math.random()*building.length);
 		int b= (int)(Math.random()*building.length);
 		building[a][b] = new BattleRoom(x, y);

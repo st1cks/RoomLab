@@ -3,7 +3,7 @@ package People;
 /**
  * Person represents the player as they move through the game.
  */
-public class Person {
+public class Person{
 	String firstName;
 	String familyName;
 	int xLoc, yLoc;
@@ -11,6 +11,15 @@ public class Person {
 	private int Strength;
 	private int Gold;
 	//Initializes the variables.
+
+	public Person()
+	{
+		firstName = "";
+		familyName = "";
+		xLoc = 0;
+		yLoc = 0;
+		// keep going for the rest
+	}
 	public Person (String firstName, String familyName, int xLoc, int yLoc)
 	{
 		this.firstName = firstName;
@@ -22,7 +31,6 @@ public class Person {
 		this.Strength =5;
 		this.Gold = 0;
 	}
-
 
 	public int getxLoc() {
 		return xLoc;
@@ -66,6 +74,9 @@ public class Person {
 		return "Strength ="+Strength+"";
 	}
 
+	public void modifyStats(){
+
+	}
 	//Method to consume apple.
 	public String Consume(Consumable Apple)
 	{
