@@ -1,7 +1,10 @@
 package Enemies;
 
 public class Enemy2 {
-
+    private final int MAX_HP = 20;
+    private int HP;
+    private final int ATK= 10;
+    private final int GoldDrop = 20;
     public String getName(){
         return "Funky Hand Cat";
     }
@@ -34,5 +37,9 @@ public class Enemy2 {
                 "Thank you for visiting https://asciiart.website/\n" +
                 "This ASCII pic can be found at\n" +
                 "https://asciiart.website/index.php?art=animals/cats\n");
+    }
+
+    public int getGoldDrop(){
+        return 20;
     }
 }

@@ -33,7 +33,7 @@ public class Enemy1 implements Enemy {
     }
 
 public int goldDrop(){
-        return 0;
+        return 5;
 }
 
 }

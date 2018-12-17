@@ -64,10 +64,6 @@ public class Person{
 		return ""+Health+"/"+maxHealth+"";
 	}
 
-	public static void consumeApple(Person x){
-		Apple.eat(Person x);
-	}
-
 	public String strengthIncrease(int Amt){
 		Strength = Strength + Amt;
 
@@ -77,13 +73,6 @@ public class Person{
 	public void modifyStats(){
 
 	}
-	//Method to consume apple.
-	public String Consume(Consumable Apple)
-	{
-	}
 
-	//Method to pickup items. If inventory is full, it will drop the items that were first picked up.
-	public String pickupItems(){
-	}
 
 }
