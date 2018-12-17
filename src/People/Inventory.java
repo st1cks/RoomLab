@@ -11,13 +11,5 @@ public class Inventory {
         ItemCount = 0;
     }
 
-    public String pickUp(String Item) {
-        pickUp = Item;
-    }
-
-
-    public obtainItem() {
-        return pickUp;
-
-    }
+    public void statModifier()
 }

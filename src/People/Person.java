@@ -10,6 +10,19 @@ public class Person {
 	private int Health, maxHealth;
 	private int Strength;
 	private int Gold;
+	//Initializes the variables.
+	public Person (String firstName, String familyName, int xLoc, int yLoc)
+	{
+		this.firstName = firstName;
+		this.familyName = familyName;
+		this.xLoc = xLoc;
+		this.yLoc = yLoc;
+		this.Health = 20;
+		this.maxHealth = 20;
+		this.Strength =5;
+		this.Gold = 0;
+	}
+
 
 	public int getxLoc() {
 		return xLoc;
@@ -27,6 +40,8 @@ public class Person {
 		this.yLoc = yLoc;
 	}
 
+
+	//Restore Health, and increase maxHealth. The gainMaxHealth method is also applied to the items;
 	public String restoreHealth(int Amt){
 		if ((Health + Amt) > maxHealth){
 		Health = maxHealth;
@@ -51,21 +66,13 @@ public class Person {
 		return "Strength ="+Strength+"";
 	}
 
-	public String Consume(Consumable E){
-		E.eat();
-	}
-
-	public Person (String firstName, String familyName, int xLoc, int yLoc)
+	//Method to consume apple.
+	public String Consume(Consumable Apple)
 	{
-		this.firstName = firstName;
-		this.familyName = familyName;
-		this.xLoc = xLoc;
-		this.yLoc = yLoc;
-		this.Health = 20;
-		this.maxHealth = 20;
-		this.Strength =5;
-		this.Gold = 0;
 	}
 
+	//Method to pickup items. If inventory is full, it will drop the items that were first picked up.
+	public String pickupItems(){
+	}
 
 }

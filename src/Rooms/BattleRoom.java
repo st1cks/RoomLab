@@ -1,6 +1,9 @@
 package Rooms;
 import Game.Runner;
 import People.Person;
+import Enemies.Enemy1;
+import Enemies.Enemy2;
+
 
     public class BattleRoom extends Room{
         public BattleRoom(int x, int y) {
@@ -15,7 +18,6 @@ import People.Person;
         System.out.println("You have entered the Battle Room.");
     }
 
-    public void spawnEnemy(){
 
-    }
+
 }

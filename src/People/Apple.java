@@ -1,5 +1,7 @@
 package People;
 
+
+//This is actually the only consumable
 public class Apple implements Consumable{
 
     public void eat(Person P){
