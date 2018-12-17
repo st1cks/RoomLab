@@ -11,5 +11,20 @@ public class Inventory {
         ItemCount = 0;
     }
 
-    public void statModifier()
+    public void modifyStats(){
+        int rustysword = 0;
+        int rustyarmor = 0;
+        int brokenstick = 0;
+        for(int i = 0; i< inventory.length; i++){
+                if(inventory[i].equals("Rusty Sword")){
+                    rustysword = rustysword+1;
+                }
+                if(inventory[i].equals("Rusty Armor")){
+                    rustyarmor = rustyarmor+1;
+                }
+                if(inventory[i].equals("Rusty Armor")){
+
+            }
+        }
+    }
 }
