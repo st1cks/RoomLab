@@ -17,14 +17,16 @@ public class Inventory {
         int brokenstick = 0;
         for(int i = 0; i< inventory.length; i++){
                 if(inventory[i].equals("Rusty Sword")){
-                    rustysword = rustysword+1;
+                    rustysword +=1;
                 }
                 if(inventory[i].equals("Rusty Armor")){
-                    rustyarmor = rustyarmor+1;
+                    rustyarmor += 1;
                 }
-                if(inventory[i].equals("Rusty Armor")){
-
+                if(inventory[i].equals("Broken Stick")){
+                    brokenstick += 1;
             }
+            int StrengthIncrease = rustysword *3 + brokenstick*5;
+            int MaxHPIncrease = rustyarmor*5;
         }
     }
 }
