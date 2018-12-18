@@ -32,4 +32,12 @@ public class Room {
 	{
 		occupant = null;
 	}
+
+	@Override
+	public String toString(){
+		if (occupant == null){
+			return "[]";
+		}
+		return "♥";
+	}
 }

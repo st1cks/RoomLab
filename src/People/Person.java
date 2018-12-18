@@ -18,7 +18,6 @@ public class Person{
 		familyName = "";
 		xLoc = 0;
 		yLoc = 0;
-		// keep going for the rest
 	}
 	public Person (String firstName, String familyName, int xLoc, int yLoc)
 	{
@@ -31,6 +30,7 @@ public class Person{
 		this.Strength =5;
 		this.Gold = 0;
 	}
+
 
 	public int getxLoc() {
 		return xLoc;

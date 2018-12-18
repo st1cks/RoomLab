@@ -2,6 +2,7 @@ package Game;
 
 import People.Person;
 import Rooms.BattleRoom;
+import Rooms.Board;
 import Rooms.Room;
 import Rooms.WinningRoom;
 import People.Inventory;
@@ -24,7 +25,8 @@ public class Runner {
 				building[x][y] = new Room(x,y);
 			}
 		}
-		
+
+
 		//Create a random winning room.
 		int x = (int)(Math.random()*building.length);
 		int y = (int)(Math.random()*building.length);

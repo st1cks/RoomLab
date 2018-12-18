@@ -24,6 +24,12 @@ public class WinningRoom extends Room
 		System.out.println("You have survived. Congratulations!");
 		Runner.gameOff();
 	}
-	
+	@Override
+	public String toString(){
+		if (occupant == null){
+			return "[]";
+		}
+		return "♥";
+	}
 
 }

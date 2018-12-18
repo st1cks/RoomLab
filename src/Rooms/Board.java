@@ -1,26 +1,23 @@
 package Rooms;
-import People.Person;
+import Rooms.Room;
+
 public class Board {
     private Room[][] board;
-    private String str;
-    public Board(Room[][] board, String str){
+
+
+    public Board(Room[][] board) {
         this.board = board;
-        this.str = str;
     }
 
-    public String toString() {
-        str = "";
+    public void print() {
+        String print1;
         for (int a = 0; a < board.length; a++) {
+            print1 = "";
             for (int b = 0; b < board[a].length; b++) {
-                str = str + board[a][b];
+                print1+= board[a][b].toString();
             }
-            str = str +"\n";
+            System.out.println(print1);
         }
-        return str;
     }
 
-    public void printRooms(){
-        System.out.println(str);
-    }
 }
-
