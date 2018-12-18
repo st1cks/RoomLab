@@ -36,8 +36,8 @@ public class Room {
 	@Override
 	public String toString(){
 		if (occupant == null){
-			return "[]";
+			return "[ ]";
 		}
-		return "♥";
+		return "[♥]";
 	}
 }

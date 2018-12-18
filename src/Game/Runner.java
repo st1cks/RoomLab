@@ -18,40 +18,39 @@ public class Runner {
 
 	private static Room[][] map = new Room[x][y];
 
-	Board Board = new Board(map);
 	public static void main(String[] args)
 	{
-		Room[][] building = new Room[10][10];
+		Board Board = new Board(map);
 
 		//Fill the building with normal rooms
-		for (int x = 0; x<building.length; x++)
+		for (int x = 0; x<map.length; x++)
 		{
-			for (int y = 0; y < building[x].length; y++)
+			for (int y = 0; y < map[x].length; y++)
 			{
-				building[x][y] = new Room(x,y);
+				map[x][y] = new Room(x,y);
 			}
 		}
 
 
 		//Create a random winning room.
-		int x = (int)(Math.random()*building.length);
-		int y = (int)(Math.random()*building.length);
-		building[x][y] = new WinningRoom(x, y);
+		int x = (int)(Math.random()*map.length);
+		int y = (int)(Math.random()*map.length);
+		map[x][y] = new WinningRoom(x, y);
 		Inventory playerinventory = new Inventory();
-		int a = (int)(Math.random()*building.length);
-		int b= (int)(Math.random()*building.length);
-		building[a][b] = new BattleRoom(x, y);
+		int a = (int)(Math.random()*map.length);
+		int b= (int)(Math.random()*map.length);
+		map[a][b] = new BattleRoom(x, y);
 
 		 //Setup player 1 and the input scanner
 		Person player1 = new Person("Timothy", "Wry", 0,0);
-		building[0][0].enterRoom(player1);
+		map[0][0].enterRoom(player1);
 		Scanner in = new Scanner(System.in);
 		while(gameOn)
 		{
 			Board.print();
 			System.out.println("Where would you like to move? (Choose N, S, E, W)");
 			String move = in.nextLine();
-			if(validMove(move, player1, building))
+			if(validMove(move, player1, map))
 			{
 				System.out.println("Your coordinates: row = " + player1.getxLoc() + " col = " + player1.getyLoc());
 				

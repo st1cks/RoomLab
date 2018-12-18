@@ -27,9 +27,9 @@ public class WinningRoom extends Room
 	@Override
 	public String toString(){
 		if (occupant == null){
-			return "[]";
+			return "[ ]";
 		}
-		return "♥";
+		return "[♥]";
 	}
 
 }
