@@ -12,11 +12,17 @@ public class Runner {
 	
 
 	private static boolean gameOn = true;
-	
+
+	private static int x = (int)(Math.random()*6) +5;
+	private static int y = (int)(Math.random()*6) +5;
+
+	private static Room[][] map = new Room[x][y];
+
+	Board Board = new Board(map);
 	public static void main(String[] args)
 	{
 		Room[][] building = new Room[10][10];
-		
+
 		//Fill the building with normal rooms
 		for (int x = 0; x<building.length; x++)
 		{
@@ -42,6 +48,7 @@ public class Runner {
 		Scanner in = new Scanner(System.in);
 		while(gameOn)
 		{
+			Board.print();
 			System.out.println("Where would you like to move? (Choose N, S, E, W)");
 			String move = in.nextLine();
 			if(validMove(move, player1, building))
