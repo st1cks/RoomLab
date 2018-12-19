@@ -9,6 +9,17 @@ public class Enemy2 {
         return "Funky Hand Cat";
     }
 
+    public int getATK(){
+        return this.ATK;
+    }
+
+    public int getInitialHP(){
+        return this.MAX_HP;
+    }
+
+    public int getHP(){
+        return this.HP;
+    }
     public void printEnemy(){
         System.out.println("            .               ,.\n" +
                 "           T.\"-._..---.._,-\"/|\n" +

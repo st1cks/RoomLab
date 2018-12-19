@@ -13,10 +13,14 @@ public class Runner {
 
 	private static boolean gameOn = true;
 
-	private static int x = (int)(Math.random()*6) +5;
-	private static int y = (int)(Math.random()*6) +5;
+	private static int x = (int)(Math.random()*10) +5;
+	private static int y = (int)(Math.random()*10) +5;
 
 	private static Room[][] map = new Room[x][y];
+
+	public static int randomGenX(){
+		return (int)(Math.random()*map.length);
+	}
 
 	public static void main(String[] args)
 	{
@@ -37,9 +41,8 @@ public class Runner {
 		int y = (int)(Math.random()*map.length);
 		map[x][y] = new WinningRoom(x, y);
 		Inventory playerinventory = new Inventory();
-		int a = (int)(Math.random()*map.length);
-		int b= (int)(Math.random()*map.length);
-		map[a][b] = new BattleRoom(x, y);
+
+
 
 		 //Setup player 1 and the input scanner
 		Person player1 = new Person("Timothy", "Wry", 0,0);

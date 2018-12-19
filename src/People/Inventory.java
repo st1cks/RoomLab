@@ -4,12 +4,15 @@ public class Inventory extends Person{
     private int ItemCount;
     private final int MAX_ITEMS = 5;
     private String[] inventory;
+    private int atkIncrease;
+    private int hpIncrease;
+
 
     Person person1 = new Person();
 
     public Inventory(){
         this.inventory = new String[MAX_ITEMS];
-        ItemCount = 0;
+        this.ItemCount = 0;
     }
 
     public void modifyStats(){
@@ -26,8 +29,6 @@ public class Inventory extends Person{
                 if(inventory[i].equals("Broken Stick")){
                     brokenstick += 1;
             }
-            int StrengthIncrease = rustysword *3 + brokenstick*5;
-            int MaxHPIncrease = rustyarmor*5;
         }
     }
 }
