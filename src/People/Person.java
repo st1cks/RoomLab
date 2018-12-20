@@ -10,6 +10,9 @@ public class Person{
 	private int Health, maxHealth;
 	private int Strength;
 	private int Gold;
+
+	public Consumable[] inventory;
+
 	//Initializes the variables.
 
 	public Person()

@@ -1,11 +1,10 @@
 package Game;
 
 import People.Person;
-import Rooms.BattleRoom;
 import Rooms.Board;
 import Rooms.Room;
 import Rooms.WinningRoom;
-import People.Inventory;
+
 import java.util.Scanner;
 
 public class Runner {
@@ -40,7 +39,7 @@ public class Runner {
 		int x = (int)(Math.random()*map.length);
 		int y = (int)(Math.random()*map.length);
 		map[x][y] = new WinningRoom(x, y);
-		Inventory playerinventory = new Inventory();
+
 
 
 

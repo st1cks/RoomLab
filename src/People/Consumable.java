@@ -2,7 +2,7 @@ package People;
 
 public interface Consumable {
 
-    public void eat(Person X);
+    void eat(Person x);
 
-    public String getName();
+    String getName();
 }
