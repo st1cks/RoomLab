@@ -11,14 +11,26 @@ public class Runner {
 	
 
 	private static boolean gameOn = true;
-
+	//Determines the minimum and maximum size of the board.
 	private static int x = (int)(Math.random()*10) +5;
 	private static int y = (int)(Math.random()*10) +5;
-
+	//Generates the map.
 	private static Room[][] map = new Room[x][y];
-
+	//Generate random size for the board.
 	public static int randomGenX(){
 		return (int)(Math.random()*map.length);
+	}
+
+	//Code to generate random X and Y, to place rooms or objects randomly on the board.
+	public static int randoY(){
+		return (int)(Math.random()*map.length);
+	}
+	public static int randoX(){
+		return (int)(Math.random()*map[0].length);
+	}
+	public static void randomXY(){
+		x= randoX();
+		y = randoY();
 	}
 
 	public static void main(String[] args)

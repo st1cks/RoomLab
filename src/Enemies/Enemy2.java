@@ -1,25 +1,27 @@
 package Enemies;
 
 public class Enemy2 {
-    private final int MAX_HP = 20;
+
     private int HP;
-    private final int ATK= 10;
-    private final int GoldDrop = 20;
+  private int ATK;
     public String getName(){
         return "Funky Hand Cat";
     }
 
+    //Constructor allows the new enemy to be created in the battleroom.
+    public Enemy2(int HP, int ATK){
+        this.HP = HP;
+        this.ATK = ATK;
+    }
+
+    //Battle stats.
     public int getATK(){
-        return this.ATK;
+        return ATK;
     }
-
-    public int getInitialHP(){
-        return this.MAX_HP;
-    }
-
     public int getHP(){
-        return this.HP;
+        return HP;
     }
+
     public void printEnemy(){
         System.out.println("            .               ,.\n" +
                 "           T.\"-._..---.._,-\"/|\n" +

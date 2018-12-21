@@ -51,6 +51,14 @@ public class Person{
 		this.yLoc = yLoc;
 	}
 
+	//These two methods will be used in the battleroom loops in order to call the player HP and Strength, using those numbers to conduct the battles.
+	public int getHP(){
+		return Health;
+	}
+	public int getStrength(){
+		return Strength;
+	}
+
 
 	//Restore Health, and increase maxHealth. The gainMaxHealth method is also applied to the items;
 	public String restoreHealth(int Amt){

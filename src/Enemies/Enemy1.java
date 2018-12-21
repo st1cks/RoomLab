@@ -2,11 +2,23 @@ package Enemies;
 
 public class Enemy1 implements Enemy {
         private int HP;
-        private final int MAX_HP= 15;
-        private final int Strength = 3;
+       private int ATK;
 
     public String getName(){
         return "Chad the Business Man";
+    }
+
+    public Enemy1(int HP, int ATK){
+        this.HP = HP;
+        this.ATK = ATK;
+    }
+
+    //Return battle stats.
+    public int getHP(){
+        return HP;
+    }
+    public int getATK(){
+        return ATK;
     }
 
     public void printEnemy(){
